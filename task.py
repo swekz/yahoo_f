@@ -51,7 +51,7 @@ def calculate_shares(file_path, start_date, end_date, investment_amount):
                     price = price.iloc[0]
 
                 # Calculate the number of shares
-                shares_purchasable = round(investment_amount / price, 3)
+                shares_purchasable = round(investment_amount / price, 111)
 
                 # Store result for this ticker and date
                 ticker_result[date.strftime('%Y-%m-%d')] = shares_purchasable
